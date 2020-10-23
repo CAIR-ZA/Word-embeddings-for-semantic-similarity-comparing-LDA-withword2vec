@@ -5,7 +5,7 @@ Code for the comparing LDA and word2vec using the CORD-19 and 20 Newsgroups data
 *The code contained in this folder are all the Python files necessary to carry out the experiments discussed in the Methodology.* <br>
 
 **1. lda.py** - In this file , the entire corpus of the 20 Newsgroups dataset was extracted from the scikit-learn library and used to train the LDA model from gensim. Some basic text preprocessing was carried out before the model training. After the training of the model test sets were indexed and then compared amongst one another using the adjusted Jensen-Shannon distances (AJSDs) and histograms of the AJSDs were created. Once this is done a reference set and query set where generated and stored from the test sets and used to create the relevance index (the process of doing this is explained in the report). <br>
-**2. w2v.py** - In this file, the entire corpus of the 20 Newsgroups dataset was extracted from the scikit-learn library and used to train the word2vec model from gensim. Once the model is trained, test sets were indexed and compared using the soft-cosine. <br> similarity. Finally a reference and query set was used to create and store the data needed to create the relevance index.
+**2. w2v.py** - In this file, the entire corpus of the 20 Newsgroups dataset was extracted from the scikit-learn library and used to train the word2vec model from gensim. Once the model is trained, test sets were indexed and compared using the soft-cosine similarity. Finally a reference and query set was used to create and store the data needed to create the relevance index. <br> 
 **3. rel_index.py** - Using the stored data from lda.py and w2v.py we create a relevance index and calculate some basic machine learning statistics.<br>
 
 
